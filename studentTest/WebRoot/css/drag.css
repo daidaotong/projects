@@ -1,0 +1,63 @@
+ img{
+      border:0px;
+  }
+  
+  #overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+     z-index: 99;
+     width: 100%;
+     height: 500px;
+     background-color: #000;
+     filter:alpha(opacity=70);
+     -moz-opacity: 0.6;
+     opacity: 0.6;
+ }
+ 
+ .floatDiv{
+     padding:0 0 0 0;    
+     position:absolute; 
+     width:300px; 
+     margin:0 0 0 0; 
+     z-index:100;
+     border:1px solid #DADADA; 
+     background:#FFF; padding:1px;
+ }
+ 
+ .floatDiv .divTitle{
+     background:#E0E0E0 url('../images/dragForm/title_bg.gif');
+     background-position:top left;
+     background-repeat:repeat-x;
+     height:25px;
+     line-height:25px;
+     padding:0px 4px;
+     cursor:default;
+ }
+ 
+ .floatDiv .divContent{
+     padding:3px; 
+     min-height:100px;
+     height:200px; cursor:default;
+     overflow: auto;
+ }
+
+ .floatDiv .divFoot{
+     background:#F0F0F0; 
+     text-align:right; 
+     padding:4px;
+     background:#E0E0E0 url('../images/dragForm/bottom_bg.gif');
+     background-position:top left;
+     background-repeat:repeat-x;
+ }
+ 
+ .floatDiv input.divButton{
+     background:#E0E0E0 url('../images/dragForm/button_bg.gif');
+     background-position:top left;
+     background-repeat:repeat-x;
+     border:1px solid #D1D3D2;
+     height:21px;
+     font-size:12px;
+     padding:2px 5px;
+     color:#626264;
+ }

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<dataset>
+	
+    <Student StudentID='1001'   StudentName='张三'   StudentAge='20'   StudentSex ='男'   StudentAddress='西城' />
+    <Student StudentID='1002'   StudentName='李四'   StudentAge='23'   StudentSex ='女'   StudentAddress='朝阳' />
+    <Student StudentID='1003'   StudentName='王五'   StudentAge='26'   StudentSex ='男'   StudentAddress='海淀' />
+    <Student StudentID='1004'   StudentName='赵六'   StudentAge='30'   StudentSex ='女'   StudentAddress='东城' />
+</dataset>

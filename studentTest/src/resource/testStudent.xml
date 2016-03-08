@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans default-autowire="byName">
+<bean id="studentOptDao" class="com.ztb.testStudent.dao.persistence.StudentOptDao">
+			<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		</bean>
+		<bean id="studentOptImp" class="com.ztb.testStudent.Service.imp.StudentOptImp">
+		<property name="studentDao">
+		<ref bean="studentOptDao"/>
+		</property>
+		</bean>
+			<bean id="studentAction" class="com.ztb.student.web.action.StudentAction"  singleton="false">
+		<property name="studentOpt" ref="studentOptImp"></property>
+	</bean>
+</beans>

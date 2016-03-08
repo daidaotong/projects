@@ -1,0 +1,36 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Click</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META http-equiv=Pragma content=no-cache>
+<SCRIPT language=JavaScript>
+//左边栏显示与隐藏
+function HideList(frm,ss)
+{
+	
+	if (frm.liststatus.value==0)
+	{
+		ss.src="images/click_right.jpg";
+		top.mainall.cols="0,10,*";
+	}
+	else
+	{
+		ss.src="images/click_left.jpg";
+		top.mainall.cols="209,10,*";
+	}
+	frm.liststatus.value = 1 - frm.liststatus.value;
+
+}
+</SCRIPT>
+
+<META content="MSHTML 6.00.2900.2912" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff leftMargin=0 topMargin=0 marginwidth="0" marginheight="0">
+<TABLE height="100%" cellSpacing=0 cellPadding=0 width=10 
+background=images/bg_click.jpg border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <FORM name=frmHide><A style="CURSOR: hand" 
+      onclick=HideList(frmHide,arrow)><IMG height=15 
+      src="./images/click_left.jpg" width=10 border=0 name=arrow></A> <INPUT 
+      type=hidden value=0 name=liststatus> 
+</FORM></TD></TR></TBODY></TABLE></BODY></HTML>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
+	<!-- 配置SessionFactory -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="configLocation">
+			<value>classpath:hibernate.cfg.xml</value>
+		</property>
+	</bean>
+
+	<!-- 学生基本配置-->
+	<bean name="studentDao" class="com.ddt.dao.StudentDao">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean name="stuService" class="com.ddt.service.StuService">
+		<property name="dao" ref="studentDao"></property>
+	</bean>
+	<bean name="stuAction" class="com.ddt.action.StuAction">
+		<property name="service" ref="stuService"></property>
+	</bean>
+
+	<!-- 用户信息配置-->
+	<bean name="userDao" class="com.ddt.dao.UserDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="userService" class="com.ddt.service.UserService">
+		<property name="dao" ref="userDao" />
+	</bean>
+	<bean name="userAction" class="com.ddt.action.UserAction">
+		<property name="service" ref="userService" />
+	</bean>
+
+	<!-- 课程基本配置 -->
+	<bean name="courseDao" class="com.ddt.dao.CourseDao">
+		<property name="sessionFactory" ref="sessionFactory"/> 
+	</bean> 
+	<bean name="courseService" class="com.ddt.service.CourseService"> 
+		<property name="dao" ref="courseDao"/> 
+	</bean> 
+	<bean name="courseAction" class="com.ddt.action.CourseAction"> 
+		<property name="service" ref="courseService"/> 
+	</bean>
+	
+	<!--
+		成绩基本配置 <bean name="scoreDao" class="Dao.ScoreDao"> <property
+		name="sessionFactory" ref="sessionFactory"></property> </bean> <bean
+		name="scoreService" class="Service.ScoreService"> <property name="dao"
+		ref="scoreDao"></property> </bean> <bean name="scoreAction"
+		class="Action.ScoreAction"> <property name="service"
+		ref="scoreService"></property> </bean>
+	-->
+
+	<!-- 声明式事务控制 -->
+	<bean id="txManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<tx:advice id="txAdvice" transaction-manager="txManager">
+		<tx:attributes>
+			<tx:method name="*" />
+		</tx:attributes>
+	</tx:advice>
+	<aop:config>
+		<aop:pointcut id="myServiceOperation"
+			expression="execution(* com.ddt.service.*.*(..))" />
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="myServiceOperation" />
+	</aop:config>
+
+
+</beans>

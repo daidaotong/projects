@@ -1,0 +1,28 @@
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[Student]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [dbo].[Student]
+GO
+
+CREATE TABLE [dbo].[Student] (
+	[StudentID] [numeric](19, 0) IDENTITY (1, 1) NOT NULL ,
+	[StudentName] [varchar] (50) COLLATE Chinese_PRC_CI_AS NULL ,
+	[StudentAge] [int] NULL ,
+	[StudentSex] [varchar] (50) COLLATE Chinese_PRC_CI_AS NOT NULL ,
+	[StudentAddress] [varchar] (50) COLLATE Chinese_PRC_CI_AS NULL ,
+	[gradeId] [numeric](19, 0) NULL 
+) ON [PRIMARY]
+GO
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[FKF3371A1B44CB0E70]') and OBJECTPROPERTY(id, N'IsForeignKey') = 1)
+ALTER TABLE [dbo].[Student] DROP CONSTRAINT FKF3371A1B44CB0E70
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[Grade]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [dbo].[Grade]
+GO
+
+CREATE TABLE [dbo].[Grade] (
+	[GradeId] [numeric](19, 0) IDENTITY (1, 1) NOT NULL ,
+	[GradeName] [varchar] (50) COLLATE Chinese_PRC_CI_AS NULL ,
+	[delFlag] [int] NULL 
+) ON [PRIMARY]
+GO
+

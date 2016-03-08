@@ -1,0 +1,330 @@
+@charset "gb2312";
+a {
+	font-size: 12px;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+a:link {
+	font-size: 12px; color: #000000; font-family: Arial, Helvetica, sans-serif; text-decoration: underline
+}
+a:visited {
+	font-size: 12px; color: #000000; font-family: Arial, Helvetica, sans-serif; text-decoration: underline
+}
+a:active {
+	font-size: 12px; color: #000000; font-family: Arial, Helvetica, sans-serif; text-decoration: underline
+}
+a:hover {
+	font-size: 12px; color: #800080; font-family: Arial, Helvetica, sans-serif; text-decoration: none
+}
+body {
+	font-size: 12px;
+	color: #000000;
+	line-height: 22px;
+	font-family: "宋体", sans-serif;
+	background-color: #ffffff;
+	margin-top:0px;
+	margin-left:0px;	
+	margin-right:0px;
+	margin-bottom:0px;
+	SCROLLBAR-FACE-COLOR:#E3EBF8;
+	SCROLLBAR-HIGHLIGHT-COLOR:#F0F5FA;
+	SCROLLBAR-SHADOW-COLOR:#3874c8;
+	SCROLLBAR-3DLIGHT-COLOR:#ffffff;
+	SCROLLBAR-ARROW-COLOR:#3366cc;
+	SCROLLBAR-TRACK-COLOR:#F1F3F9;
+	SCROLLBAR-DARKSHADOW-COLOR:#ffffff;
+}
+p {
+	font-size: 12px; color: #000000; line-height: 22px; font-family: Arial, Helvetica, sans-serif;
+}
+tr {
+	font-size: 12px; color: #000000; line-height: 22px; font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+	font-size: 12px; color: #000000; line-height: 22px; font-family: Arial, Helvetica, sans-serif;
+}
+li {
+	font-size: 12px; color: #000000; line-height: 22px; font-family: Arial, Helvetica, sans-serif;
+}
+textfield {
+	font-size: 12px; color: #000000; font-family: Arial, Helvetica, sans-serif;
+}
+option {
+	font-size: 12px; color: #000000; font-family: Arial, Helvetica, sans-serif;
+}
+select {
+	font-size: 12px; color: #000000; font-family: Arial, Helvetica, sans-serif;
+}
+textarea {
+	font-size: 12px; color: #000000; font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+	font-size: 12px; font-family: Arial, Helvetica, sans-serif;
+}
+input.read {
+	border-right: medium none; border-top: medium none; font-size: 12px; border-left: medium none; border-bottom: black 1px solid; font-family: Arial, Helvetica, sans-serif; background-color: #faf7f7
+}
+input.readcenter {
+	border-right: medium none; border-top: medium none; font-size: 12px; border-left: medium none; border-bottom: black 1px solid; font-family: Arial, Helvetica, sans-serif; background-color: #faf7f7; text-align: center
+}
+input.readleft {
+	border-right: medium none; border-top: medium none; font-size: 12px; border-left: medium none; border-bottom: black 1px solid; font-family: Arial, Helvetica, sans-serif; background-color: #faf7f7; text-align: left
+}
+input.readright {
+	border-right: medium none; border-top: medium none; font-size: 12px; border-left: medium none; border-bottom: black 1px solid; font-family: Arial, Helvetica, sans-serif; background-color: #faf7f7; text-align: right
+}
+td.titlebold {
+	font-weight: bold; font-size: 12px; color: #000000; line-height: 22px; font-family: Arial, Helvetica, sans-serif; text-align: left
+}
+td.titleboldcenter {
+	font-weight: bold; font-size: 12px; color: #ffffff; line-height: 22px; font-family: Arial, Helvetica, sans-serif; background-color: #466abb; text-align: center
+}
+td.titleboldright {
+	font-weight: bold; font-size: 12px; color: #ffffff; line-height: 22px; font-family: Arial, Helvetica, sans-serif; background-color: #ffcc00; text-align: right
+}
+td {
+	font-size: 12px; word-breaK: break-all; line-height: 22px; font-family: Arial, Helvetica, sans-serif;
+}
+td.bold {
+	font-weight: bolder; font-size: 12px; color: #000000; line-height: 22px; font-family: Arial, Helvetica, sans-serif; background-color: #ffffff; text-align: left
+}
+td.left {
+	font-size: 12px; color: #000000; line-height: 22px; font-family: Arial, Helvetica, sans-serif; background-color: #ffffff; text-align: left
+}
+td.right {
+	font-size: 12px; color: #000000; line-height: 22px; font-family: Arial, Helvetica, sans-serif; background-color: #ffffff; text-align: right
+}
+td.center {
+	font-size: 12px; color: #000000; line-height: 22px; font-family: Arial, Helvetica, sans-serif; background-color: #ffffff; text-align: center
+}
+form {
+	border-right: 0px; padding-right: 0px; border-top: 0px; padding-left: 0px; font-size: 12px; padding-bottom: 0px; margin: 0px; border-left: 0px; padding-top: 0px; border-bottom: 0px; font-family: Arial, Helvetica, sans-serif}
+font {
+	font-size: 12px; font-family: Arial, Helvetica, sans-serif; letter-spacing: 0px
+}
+.left1 {
+	font-family: Arial, Helvetica, sans-serif; letter-spacing: 0px
+}
+.tdline {
+	line-height: normal;
+}
+/*左靠齐样式*/
+.left {
+	margin-left:35px;
+	}
+/*左靠齐10像素样式*/
+.left10 {
+	margin-left:12px; line-height: 30px;
+	}
+/*按钮样式*/
+.buttonpop {
+	font-size: 12px;
+	color: #13318f;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url(../../images/system/BG/bg_button.jpg);
+	border: 1px solid #0356b4;	
+}
+/*表单样式*/
+.bgcolor {
+	font-size: 12px;
+	line-height: 22px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #cecece;
+}
+/*数据项红色注释文字样式*/
+.red {
+	font-size: 12px; color: red
+}
+/*数据项注释文字样式*/
+.gray {
+	font-size: 12px; color: #999999;
+}
+/*回行样式*/
+.foo {
+	display:block
+}
+/*导航条白色文字样式*/
+.topwhite{
+	color:#ffffff;
+	font-size: 12px;
+}
+	
+/*当前动态位置样式*/
+.navtitle{
+	margin-left:38px;
+	font-size: 12px;
+	font-weight: bolder;
+	text-indent: 24px;
+}
+/*表单表头样式*/
+.title_tr{
+	font-size: 12px;
+	background-color: #5f88c4;
+	color: #ffffff;
+	font-weight: bold;
+}
+/*表单表头样式2*/
+.title_tr2{
+	font-size: 12px;
+	background-color: #95BCEF;
+	color: #ffffff;
+	text-align: center;
+}
+/*表单表头文字样式*/
+.title_left{
+	font-size: 12px;
+	text-indent: 24px;
+}
+/*白色背景表单样式*/
+.tablewhite {
+		font-size: 12px;
+		background-color: #ffffff;
+}
+/*粗体样式*/
+.bold {
+	font-size: 12px;
+	font-weight: bold;
+}
+/*绿色文字粗体样式*/
+.green {
+	font-weight: bold;
+	color: #339933;
+}
+/*灰色色背景表单样式*/
+.tablegray {
+		font-size: 12px;
+		background-color: #f0f0f0;
+}
+/*渐近蓝色背景表头样式*/
+.bluetrbg {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url(../../images/publish/BG/publish_line.gif);
+}
+/**链接：白色样式**/
+a.titlelink:link {
+	color: #ffffff; text-decoration: underline
+}
+a.titlelink:visited {
+	color: #ffffff; text-decoration: underline
+}
+a.titlelink:hover {
+	color: #94FFFF; text-decoration: none
+}
+a.titlelink:active {
+	color: #ffffff; text-decoration: underline
+}
+/**链接：黑色样式**/
+a.black:link{
+   color: #000000; text-decoration: none;
+}
+a.black:visited {
+	color: #000000; text-decoration: none;
+}
+a.black:hover {
+	color: #800080; text-decoration: none;
+}
+a.black:active {
+	color: #000000; text-decoration: none;
+}
+/**链接：红色样式**/
+a.redlink:link {
+	color: #FF0000;
+	text-decoration: underline;
+	font-weight: bold;
+}
+a.redlink:visited {
+	color: #FF0000; text-decoration: underline; font-weight: bold;
+}
+a.redlink:hover {
+	color: #800080; text-decoration: none; font-weight: bold;
+}
+a.redlink:active {
+	color: #FF0000; text-decoration: underline; font-weight: bold;
+}
+/**链接：蓝色样式**/
+a.bulelink:link {
+	color: #0000FF; text-decoration: none;
+}
+a.bulelink:visited {
+	color: #0000FF; text-decoration: none;
+}
+a.bulelink:hover {
+	color: #800080; text-decoration: none;
+}
+a.bulelink:active {
+	color: #0000FF; text-decoration: none;
+}
+/**输入框样式**/
+.input{
+	background-color:#FFFFFF;
+	border:1px solid #333A70;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+/**项目无符号样式**/
+.li_none {
+	list-style-type: none;
+	list-style-image: none;
+}
+/**颜色交替的表格样式**/
+.DoubleColorTable{background-color:expression("#FFFFFF,#f5f5f5".split(",")[rowIndex%2])}
+
+.schedule_td {
+	font-size: 12px;
+	font-weight: bold;
+	color: #0844bc;
+	text-decoration: none;
+	background-color: #f3f3f3;
+}
+.schedule_th {
+	font-size: 24px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.schedule_td1 {
+
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	background-color: #f3f3f3;
+}
+.schedule_td2 {
+
+
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	background-color: #f3f3f3;
+}
+.schedule_th1 {
+
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.schedule_td_green {
+
+
+
+	font-size: 14px;
+	font-weight: bold;
+	color: #006600;
+	text-decoration: none;
+	background-color: #f3f3f3;
+}
+/**颜色交替的表格样式**/
+.DoubleColorTable{background-color:expression("#FFFFFF,#f5f5f5".split(",")[rowIndex%2])}
+.table_title_bg {
+	background-image: url(../../images/table_title_bg.gif);
+	background-repeat: repeat;
+	height: 7px;
+}
